@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function ApiHandler(props) {
   let { city, invalidCity, datafromApi } = props;
 
-  const api_key = import.meta.env.VITE_WEATHER_API_KEY;
+  const api_key = import.meta.env.VITE_WEATHER_API_KEY || "4fc75064795929c2075abaa0ba5d5cd5";
   const api_url =
     "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
