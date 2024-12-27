@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_container {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 2rem;
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_bar {
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    font-size: 1rem;
+    height: 2.6rem;
+    padding: 0.5rem 1.5rem;
+    width: 78%;
+    cursor: pointer;
+}
+
+.search_btn {
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.8rem 0rem 0.8rem;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.search_btn img {
+    height: 1.2rem;
+}
+
+.weather {
+    margin: 1.4rem 0;
+    background-color: #fbf9f929;
+    padding-bottom: 1rem;
+    border-radius: 18px;
+    backdrop-filter: blur(5px);
+    position:relative;
+}
+
+.current_time{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.wearther_image {
+    width: 50%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+.temp {
+    font-size: 3rem;
+}
+
+.city {
+    font-size: 1.8rem;
+}
+
+.temp,
+.city {
+    color: white;
+    font-weight: 700;
+}
+
+.sunrise_sunset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-align: start;
+    padding: 0 22px;
+}
+
+.details .col p ,.sunrise_sunset p{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fbf9f929;
+    border-radius: 18px;
+    padding: 6px 5px;
+    backdrop-filter: blur(5px);
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+
+.details .col img {
+    width: 25%;
+    height: auto;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+
+
+@media screen and (max-width:440px) {
+    .main_container {
+        display: block;
+    }
+
+    .card {
+        width: auto;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .search {
+        padding: 0;
+    }
+
+    .search_bar {
+        font-size: 1rem;
+        height: 2.7rem;
+    }
+
+    .search_btn {
+        padding: 0.5rem 0.8rem 0rem 0.8rem;
+    }
+
+    .search_btn img {
+        height: 1.4rem;
+    }
+
+    .temp {
+        font-size: 2.6rem;
+    }
+
+    .city {
+        font-size: 2rem;
+    }
+
+    .details .col p {
+        font-size: 1rem;
+    }
+
+
+}
